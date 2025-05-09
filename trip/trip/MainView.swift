@@ -16,23 +16,22 @@ struct MainView: View {
         
         NavigationStack {
             VStack {
-                Group {
-                    VStack(spacing: 16) {
-                        Spacer()
-                        // MARK: - 프로필
-                        ProfileView()
-                        // MARK: - 검색바
-                        SearchBarView(searchText: $seachData)
-                        Spacer()
-                        // MARK: - 메뉴
-                        MenuView()
-                        Spacer()
-                        // MARK: - 카드
-                        PopularPlacesView()
+                VStack(spacing: 16) {
+                    Spacer()
+                    // MARK: - 프로필
+                    ProfileView()
+                    // MARK: - 검색바
+                    SearchBarView(searchText: $seachData)
+                    Spacer()
+                    // MARK: - 메뉴
+                    MenuView()
+                    Spacer()
+                    // MARK: - 카드
+                    PopularPlacesView()
 
-                    }
-                    .padding(.horizontal)
                 }
+                .padding(.horizontal)
+
             }
 
         }
