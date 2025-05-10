@@ -10,8 +10,13 @@ import SwiftUI
 struct FlightView: View {
     var body: some View {
         VStack {
-            // MARK: - 해더
-            
+            VStack {
+                // MARK: - 해더
+                TitleView(title: "Book Your Flight")
+                
+                ToggleBtnView()
+            }
+            .padding(.vertical)
             // MARK: - 박스
             VStack {
                 BoxBoxView(
@@ -27,7 +32,7 @@ struct FlightView: View {
                     value: "New York",
                     line: true
                 )
-
+                
                 
                 HStack {
                     BoxBoxView(
@@ -55,10 +60,10 @@ struct FlightView: View {
                         value: "Business",
                         line: false
                     )
-                
+                    
                 }
-
-
+                
+                
             }
             
             // MARK: - Recommended
@@ -67,7 +72,7 @@ struct FlightView: View {
         }
         .padding()
         .navigationTitle("Flights")
-        //        .navigationBarTitleDisplayMode(.inline)
+        
     }
 }
 
