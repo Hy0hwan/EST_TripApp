@@ -15,22 +15,50 @@ struct FlightView: View {
             // MARK: - 박스
             VStack {
                 BoxBoxView(
-                    systemImageName: "calendar",
-                    title: "Passengers",
-                    value: "2 Adults",
+                    systemImageName: "airplane",
+                    title: "From",
+                    value: "San Francisco",
                     line: true
                 )
+                
+                BoxBoxView(
+                    systemImageName: "calendar",
+                    title: "Destination",
+                    value: "New York",
+                    line: true
+                )
+
+                
                 HStack {
                     BoxBoxView(
-                        systemImageName: "car",
+                        systemImageName: "calendar",
                         title: "Passengers",
                         value: "2 Adults",
                         line: false
                     )
                     
-                    .frame(width: UIScreen.main.bounds.width / 2)// 전체 절반
+                    .frame(width: UIScreen.main.bounds.width / 2)
                     Spacer()
                 }
+                
+                HStack {
+                    BoxBoxView(
+                        systemImageName: "car",
+                        title: "Departures",
+                        value: "5 July 2020",
+                        line: false
+                    )
+                    
+                    BoxBoxView(
+                        systemImageName: "car",
+                        title: "Class",
+                        value: "Business",
+                        line: false
+                    )
+                
+                }
+
+
             }
             
             // MARK: - Recommended

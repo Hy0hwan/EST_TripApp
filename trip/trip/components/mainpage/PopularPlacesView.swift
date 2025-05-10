@@ -17,7 +17,13 @@ struct Place: Identifiable {
 struct PopularPlacesView: View {
     let places: [Place] = [
         Place(imageName: "newyork", title: "New york city skyline", distance: "2.902 mi"),
-        Place(imageName: "brooklyn", title: "Brooklyn bridge", distance: "2.128 mi")
+        Place(imageName: "brooklyn", title: "Brooklyn bridge", distance: "2.128 mi"),
+        Place(imageName: "newyork", title: "New york city skyline", distance: "2.902 mi"),
+        Place(imageName: "brooklyn", title: "Brooklyn bridge", distance: "2.128 mi"),
+        Place(imageName: "newyork", title: "New york city skyline", distance: "2.902 mi"),
+        Place(imageName: "brooklyn", title: "Brooklyn bridge", distance: "2.128 mi"),
+        Place(imageName: "newyork", title: "New york city skyline", distance: "2.902 mi"),
+        Place(imageName: "brooklyn", title: "Brooklyn bridge", distance: "2.128 mi"),
     ]
     
     var body: some View {
